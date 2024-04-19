@@ -251,7 +251,7 @@ game.onUpdateInterval(1000, function () {
     ground2.vx += -1
 })
 game.onUpdateInterval(1000, function () {
-    choice = randint(0, 4)
+    choice = randint(0, 2)
     if (choice == 0) {
         tree = sprites.createProjectileFromSide(img`
             ................86..................
@@ -335,7 +335,7 @@ game.onUpdateInterval(1000, function () {
             `, ground1.vx, 0)
         tree.y = 94
         tree.z = 2
-    } else if (choice == 1) {
+    } else if (choice == 2) {
         tree = sprites.createProjectileFromSide(img`
             .............6666...............
             ..........666667766.6666........
@@ -416,12 +416,12 @@ game.onUpdateInterval(1500, function () {
     }
 })
 forever(function () {
-    if (ground2.x < -1 * (scene.screenWidth() / 2)) {
-        ground2.x = ground1.x + scene.screenWidth()
+    if (ground1.x < -1 * (scene.screenWidth() / 2)) {
+        ground1.x = ground2.x + scene.screenWidth()
     }
 })
 forever(function () {
-    if (ground1.x < -1 * (scene.screenWidth() / 2)) {
-        ground1.x = ground2.x + scene.screenWidth()
+    if (ground2.x < -1 * (scene.screenWidth() / 2)) {
+        ground2.x = ground1.x + scene.screenWidth()
     }
 })
