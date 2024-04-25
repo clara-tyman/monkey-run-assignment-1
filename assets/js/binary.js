@@ -1,4 +1,4 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.51/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"0.0.3","target":"arcade","targetVersion":"1.12.51","repo":"clara-tyman/monkey-run-assignment-1"}
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.51/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"1.0.0","target":"arcade","targetVersion":"1.12.51","repo":"clara-tyman/monkey-run-assignment-1"}
 // total=1847256 new=6.78% cached=88.22% other=5.00%
 (function (ectx) {
 'use strict';
